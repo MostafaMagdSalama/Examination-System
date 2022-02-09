@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" -->
+        <!-- integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="signin-signup">
+
+            <!-- sign up form  -->
+            <form action="#" class="sign-up-form">
+                <h2 class="title">sign Up</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Fist Name" name="fname">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Last Name" name="lname">
+                </div>
+                <div class="input-field">
+                    <i class="fa fa-envelope"></i>
+                    <input type="text" placeholder="Email" name="email">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="password">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="RE-Write password">
+                </div>
+                <input type="submit" id='sign-in-btn' value="Register" class="btn">
+                <!-- <p class="accounte-text">Already Have An Account ? <a href="#" id='sign-in-btn2'>Signin</a></p> -->
+            </form>
+            <!-- sign in  -->
+            <form action="#" class="sign-in-form">
+                <h2 class="title">sign in</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="username">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="password">
+                </div>
+                <input type="submit" id='sign-up-btn' value="login" class="btn">
+                <!-- <p class="accounte-text">Don't Have An Account? <a href="#" id='sign-up-btn2'>SignUp</a></p> -->
+            </form>
+        
+  
+          
+        </div>
+        <div class="panels-container">
+          
+            <div class="panel left-panel remove">
+                <div class="content">
+                    <h3>Make new Account ?</h3>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem tempora a sed unde nemo velit!</p> -->
+                    <button class="btn" id="sign-in-btn" onclick="gotoSignUpPage()">Sign Up </button>
+                </div>
+                <img src="./img/signin.svg" alt="" class="img">
+            </div>
+           
+            <div class="panel right-panel ">
+                <div class="content">
+                    <h3>Do You Hvae An Account ?</h3>
+                    <p>You can sign in directly to take the quiz </p>
+                    <button class="btn" id="sign-up-btn" onclick="gotoSigninPage()">Sign In </button>
+                </div>
+                <img src="./img/signup.svg" alt="" class="img">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="register.js"></script>
+</body>
+
+</html>

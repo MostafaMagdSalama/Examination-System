@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Exam</title>
+</head>
+
+<body>
+    <div class="container" >
+        <div class="question">
+            <div class="progress-bar">
+                <div class="outer-bar">
+                    <div class="inner-bar"></div>
+                </div>
+                <div class="timer">00:00</div>
+                <div class="icon-bar" onclick="iconBarHandler(this)"><i class="fa-3x fas fa-bars"></i></div>
+            </div>
+            <div class="question-content">
+                <div class="question-text">How are you Today bro ?</div>
+                <div class="add-checked"><i class="fa-5x far fa-bookmark"></i></div>
+               
+            </div>
+            <div class="answers">
+                <label for="answer1">
+                    <input type="radio" name="question1" id="answer1" />
+                    <span class="first"></span>
+                    <span class="second">Answer 1</span>
+                  </label>
+                <label for="answer2">
+                    <input type="radio" name="question1" id="answer2" />
+                    <span class="first"></span>
+                    <span class="second">Answer 1</span>
+                  </label>
+                <label for="answer3">
+                    <input type="radio" name="question1" id="answer3" />
+                    <span class="first"></span>
+                    <span class="second">Answer 1</span>
+                  </label>
+                <label for="answer4">
+                    <input type="radio" name="question1" id="answer4" />
+                    <span class="first"></span>
+                    <span class="second">Answer 1</span>
+                  </label>
+            </div>
+            <div class="submit">
+                <div class="submit-btn">
+                    <button onclick="submitHandler()">Submit</button>
+                </div>
+                <div class="controllers">
+                    <i class="fa-3x fas fa-arrow-circle-left prev"></i>
+                    <span>2</span>
+                    <i class="fa-3x fas fa-arrow-circle-right next"></i>
+                </div>
+            </div>
+        </div>
+        <div class="mark-list">
+          <div class="heading">Marked List</div>
+          <div class="checked-questions">
+              <!-- <div>
+                  question 1
+              </div>
+              <div>
+                  question 2
+              </div> -->
+          </div>
+        </div>
+    </div>
+
+<div class="result">
+    <div class="header-panel">
+        <div class="cover-panel"></div>
+    </div>
+    <div class="submited-icon">
+        <span>Exam Submited Successfully</span>
+        <i class="fa-6x far fa-check-circle"></i>
+    </div>
+        <div class="score">
+            <div class="name">Name</div>
+            <div class="grade">10/10</div>
+        </div>
+</div>
+   
+
+    <script src="./examSript.js"></script>
+</body>
+
+
+</html>
+
+
